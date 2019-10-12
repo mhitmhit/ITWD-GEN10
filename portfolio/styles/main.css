@@ -1,0 +1,31 @@
+/*
+main css file 
+for portfolio site
+*/
+
+
+body{
+	background-color: #ffeb99;
+	font-family: arial, hevetica,sans-serif;
+	color: #0d1f2d;
+	max-width: 900px;
+	margin: 0 auto;
+}
+	
+header{
+	background-color:#e6b800;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+nav{
+	border-top: 3px dashed #665200;
+	border-bottom: 3px dashed #665200;
+}
+
