@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lucky Sevens
+		</title>
+		<style>
+			caption{
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse:collapse;
+				padding: 5px 10px;
+			}
+			table{
+				width:40%;
+				
+				margin: auto;
+			}
+			tbody tr:nth-child(odd){
+				background-color: #e4c3ad;
+			}
+		</style>
+		<script type="text/javascript" src="luckySevens.js">
+		</script>
+	</head>
+
+
+
+
+
+<body onload="hideResults();">
+	<header>
+		<center>
+			<h1>Lucky Sevens
+			</h1>
+		</center>
+	</header>
+		
+	<center>	
+		<br/>
+		Starting Bet: <input type="text" name="nameTextInput" id="startingBet"/> <br/>
+		<br/>
+		<input type="submit" value="PLAY" onclick="play();"/>
+		<hr/>
+	</center>	
+	
+	<center>
+			<h1>Results
+			</h1>
+	</center>
+	
+	<div id="results">
+		<table>
+				<tr>
+					<td> <strong>Starting Bet</strong>
+					</td>
+					<td id="startingBetAmount"> <strong> 	
+						</strong>
+					</td>
+				</tr>
+				<tr>
+					<td> <strong>Total Rolls Before Going Broke</strong>
+					</td>
+					<td id="TotalRolls"> <strong>
+						</strong>
+					</td>
+				</tr>
+				<tr>
+					<td> <strong>Highest Amount Won</strong>
+					</td>
+					<td id="highestAmountWon"> 
+						<strong>
+						</strong>
+					</td>
+				</tr>
+				<tr>
+					<td> <strong>Roll Count at Highest Amount Won</strong>
+					</td>
+					<td id="rollCountAtHighestWin"> 
+						<strong>
+						</strong>
+					</td>
+				</tr>
+				
+				
+				
+		</table>
+		<br/>
+	<br/>
+		<center>
+			<input type="submit" value="Reset to PLAY-Again" onclick="document.location.reload(true);"/>
+		</center>
+		
+	</div>
+	<br/>
+	<br/>
+	<hr/>
+	<br/>
+	<br/>
+		<footer>
+			<p>&copy; 2299 Yassine Elkabaili. All rights reserved.
+			</p>
+		</footer>	
+</body>
+</html>
