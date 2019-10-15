@@ -15,6 +15,9 @@ var gameMoney=0;
 	
 /** main play function **/	
 function play(){
+	numberOfRolls=0;
+	startingBet=0;
+	maxArray=new Array;
 	startingBet=document.getElementById("startingBet").value;
 	maxArray.push(maxAmt);
 	var gameMoney=+startingBet;
@@ -64,9 +67,9 @@ function hideResults(){
 
 function dispalyResults(){
 	document.getElementById("results").style.display="inline";
-	document.getElementById("startingBetAmount").innerHTML=startingBet;
+	document.getElementById("startingBetAmount").innerHTML="$ " + startingBet;
 	document.getElementById("TotalRolls").innerHTML=numberOfRolls;
-	document.getElementById("highestAmountWon").innerHTML=Math.max.apply(Math, maxArray);
+	document.getElementById("highestAmountWon").innerHTML="$ " +Math.max.apply(Math, maxArray);
 	var value=Math.max.apply(Math, maxArray);
 	document.getElementById("rollCountAtHighestWin").innerHTML=1+ maxArray.indexOf(value);
 }
